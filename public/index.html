@@ -40,13 +40,77 @@
           <li class="p-4"><a href="#" class="nav-list">About</a></li>
           <li class="p-4"><a href="#" class="nav-list">Partner</a></li>
           <li class="p-4 flex">
-            <button class="btn-login">Login</button>
-            <button class="btn-orange">Register</button>
+            <button id="btn-login" class="btn-login">Login</button>
+            <button id="btn-register" class="btn-orange">Register</button>
           </li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <!-- Modal Login -->
+  <section>
+    <div id="login" class="fixed top-0 left-0 right-0 bg-green-300 w-screen h-full z-30 invisible">
+      <div id="login-container" class="w-1/2 mobile:w-full p-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl">
+        <button id="btn-close-in" class="flex ml-auto h-10 w-10 p-2 bg-green-700 rounded-lg hover:bg-green-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <form action="">
+          <label for="" class="block mb-2 font-semibold text-green-500">
+            <i class="fas fa-user"></i>
+            Username
+          </label>
+          <input type="text" placeholder="Username...." class="border-2 w-full py-3 px-4 mb-3 rounded-xl" />
+
+          <label for="" class="block mb-2 font-semibold text-green-500">
+            <i class="fas fa-key"></i>
+            Password
+          </label>
+          <input type="text" placeholder="Password...." class="border-2 w-full py-3 px-4 mb-3 rounded-xl" />
+        </form>
+
+        <div class="text-center mt-4">
+          <button class="btn-success">Login</button>
+          <button class="btn-re">Reset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Register -->
+  <section>
+    <div id="register" class="fixed top-0 left-0 right-0 bg-orange-300 w-screen h-full z-30 invisible">
+      <div id="register-container" class="w-1/2 mobile:w-full p-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl">
+        <button id="btn-close-reg" class="flex ml-auto h-10 w-10 p-2 bg-orange-700 rounded-lg hover:bg-orange-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <form action="">
+          <label for="" class="block mb-2 font-semibold text-green-500">
+            <i class="fas fa-user"></i>
+            Username
+          </label>
+          <input type="text" placeholder="Username...." class="border-2 w-full py-3 px-4 mb-3 rounded-xl" />
+
+          <label for="" class="block mb-2 font-semibold text-green-500">
+            <i class="fas fa-key"></i>
+            Password
+          </label>
+          <input type="text" placeholder="Password...." class="border-2 w-full py-3 px-4 mb-3 rounded-xl" />
+        </form>
+
+        <div class="text-center mt-4">
+          <button class="btn-success">Register</button>
+          <button class="btn-re">Login</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Explore -->
   <section>
@@ -115,7 +179,8 @@
             trip, but now, they can also let Lonely Planet Experiences lead the way
           </p>
 
-          <button class="btn-orange">Learn more</button>
+          <button id="btn-info" class="btn-orange">Learn more</button>
+          <p class="information-desc py-4 text-green-500 font-bold uppercase invisible">Have a nice day!!!</p>
         </div>
       </div>
     </div>

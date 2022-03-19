@@ -199,3 +199,33 @@
   after:hover:w-full 
   after:transition-all
 }
+
+.btn-success {
+  @apply
+  border-2 
+  py-2 
+  px-10 
+  mobile:px-8
+  mx-2 
+  font-semibold 
+  rounded-xl 
+  text-white 
+  border-green-500 
+  bg-green-500 
+  hover:bg-green-400
+}
+
+.btn-re {
+  @apply
+  border-2 
+  py-2 
+  px-10 
+  mobile:px-8
+  mx-2 
+  font-semibold 
+  rounded-xl 
+  text-white 
+  border-red-500 
+  bg-red-500 
+  hover:bg-red-400
+}
