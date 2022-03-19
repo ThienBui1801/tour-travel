@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour & Travel</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container mx-auto mobile:px-4 lp:px-8">
+      <nav class="flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="py-6 uppercase font-bold text-4xl text-green-600 z-20">Travel</a>
+
+        <!-- Button Menu -->
+        <div id="btn-menu" class="invisible tablet:visible mobile:visible z-20">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+
+        <!-- Navbar -->
+        <ul id="menu" class="menu-list invisible lp:visible lg:visible">
+          <li class="p-4"><a href="#" class="nav-list">Home</a></li>
+          <li class="p-4"><a href="#" class="nav-list">Destinations</a></li>
+          <li class="p-4"><a href="#" class="nav-list">About</a></li>
+          <li class="p-4"><a href="#" class="nav-list">Partner</a></li>
+          <li class="p-4 flex">
+            <button class="btn-login">Login</button>
+            <button class="btn-orange">Register</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Explore -->
+  <section>
+    <div class="container mx-auto mt-6 mobile:px-4 lp:px-8">
+      <div class="flex justify-between items-center tablet:flex-col mobile:flex-col">
+        <!-- Finder -->
+        <div class="w-1/2 tablet:w-full mobile:w-full">
+          <h2 class="font-bold text-4xl text-green-600 uppercase">Explore an Travel</h2>
+
+          <p class="my-6 font-semibold text-2xl">Holiday finder</p>
+
+          <form action="" class="w-1/2 table:w-full mobile:w-full">
+            <select id="location" class="w-full mt-2 block rounded-xl border-2 py-2 px-4">
+              <option value="Location">Location</option>
+              <option value="Raja Ampat">Raja Ampat</option>
+              <option value="Fanjingshan">Fanjingshan</option>
+              <option value="Vevey">Vevey</option>
+              <option value="Skadar">Skadar</option>
+            </select>
+            <select id="active" class="w-full mt-2 block rounded-xl border-2 py-2 px-4">
+              <option value="Activity">Activity</option>
+              <option value="Camping">Camping</option>
+              <option value="Climbing">Climbing</option>
+              <option value="Skiing">Skiing</option>
+              <option value="Fishing">Fishing</option>
+            </select>
+            <select id="grade" class="w-full mt-2 block rounded-xl border-2 py-2 px-4">
+              <option value="Grade">Grade</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <div class="mt-2">
+              <input id="date" datepicker type="date"
+                class="border-2 text-gray-900 sm:text-sm rounded-xl block w-full py-2 px-4" placeholder="Select date">
+            </div>
+          </form>
+          <button id="btn-explore" class="btn-orange mt-8">Explore</button>
+          <div id="render-explore" class="my-2 font-medium text-green-400"></div>
+        </div>
+
+        <!-- Img -->
+        <div class="w-1/2 tablet:w-full mobile:w-full">
+          <img class="w-full" src="./images/thousand-01 1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Information -->
+  <section>
+    <div class="container mx-auto mt-16 mobile:px-4 lp:px-8">
+      <div class="flex justify-between items-center tablet:flex-col mobile:flex-col">
+        <!-- Images -->
+        <div class="w-1/2 tablet:w-full tablet:order-2 tablet:mt-6 mobile:w-full mobile:order-2 mobile:mt-6">
+          <img class="w-full" src="./images/Thousand-02 1.png" alt="">
+        </div>
+
+        <!-- Text -->
+        <div class="w-1/2 tablet:w-full mobile:w-full px-16 tablet:px-0 mobile:px-0 tablet:mt-6 mobile:mt-6">
+          <h2 class="font-bold text-4xl text-green-600 uppercase">A new way to explore <br /> the world</h2>
+
+          <p class="my-5 tracking-widest font-medium text-green-400">
+            For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect
+            trip, but now, they can also let Lonely Planet Experiences lead the way
+          </p>
+
+          <button class="btn-orange">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section>
+    <div class="container mx-auto mt-16 mobile:px-4 lp:px-8">
+      <!-- Title -->
+      <h2 class="font-bold text-4xl text-green-600 uppercase">Featured destinations</h2>
+
+      <!-- Images list -->
+      <div class="flex justify-between items-center flex-wrap mobile:flex-col mt-8">
+        <div class="featured-item">
+          <div class="overflow-hidden rounded-xl">
+            <img class="featured-img" src="./images/feat1.png" alt="" />
+          </div>
+          <div class="absolute bottom-0 left-2 bg-gray-100 pt-2 pr-3 rounded-tr-xl">
+            <p class="font-medium">Rajs Ampat</p>
+            <p class="text-sm text-gray-400">Indonesia</p>
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="overflow-hidden rounded-xl">
+            <img class="featured-img" src="./images/feat2.png" alt="" />
+          </div>
+          <div class="absolute bottom-0 left-2 bg-gray-100 pt-2 pr-3 rounded-tr-xl">
+            <p class="font-medium">Fanjingshan</p>
+            <p class="text-sm text-gray-400">China</p>
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="overflow-hidden rounded-xl">
+            <img class="featured-img" src="./images/feat3.png" alt="" />
+          </div>
+          <div class="absolute bottom-0 left-2 bg-gray-100 pt-2 pr-3 rounded-tr-xl">
+            <p class="font-medium">Vevey</p>
+            <p class="text-sm text-gray-400">Switzerland</p>
+          </div>
+        </div>
+
+        <div class="featured-item">
+          <div class="overflow-hidden rounded-xl">
+            <img class="featured-img" src="./images/feat4.png" alt="" />
+          </div>
+          <div class="absolute bottom-0 left-2 bg-gray-100 pt-2 pr-3 rounded-tr-xl">
+            <p class="font-medium">Skadar</p>
+            <p class="text-sm text-gray-400">Montenegro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section>
+    <div class="container mx-auto mt-16 mobile:px-4 lp:px-8">
+      <div class="flex justify-between items-center tablet:flex-col mobile:flex-col">
+        <!-- Text -->
+        <div class="w-1/2 tablet:w-full mobile:w-full pr-16 mobile:pr-0 tablet:mb-6 mobile:mb-6">
+          <h2 class="font-bold text-4xl text-green-600 uppercase">Guides be Thousand Sunny</h2>
+
+          <p class="my-5 tracking-widest font-medium text-green-400">
+            Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the
+            ultimate resource before and during a trip.
+          </p>
+
+          <button class="btn-orange">Download</button>
+        </div>
+
+        <!-- Images -->
+        <div class="w-1/2 tablet:w-full mobile:w-full">
+          <img class="w-full" src="./images/Thousand-03.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <div class="container mx-auto mt-16 mobile:px-4 lp:px-8">
+      <!-- Title -->
+      <h2 class="font-bold text-4xl text-green-600 uppercase mb-6">Testimonials</h2>
+
+      <!-- Test info -->
+      <div class="flex justify-between items-center tablet:flex-col mobile:flex-col">
+        <!-- Comment -->
+        <div class="w-1/2 tablet:w-full mobile:w-full pr-16 tablet:pr-0 mobile:pr-0">
+          <!-- Start -->
+          <ul class="flex">
+            <li class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </li>
+            <li class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </li>
+            <li class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </li>
+            <li class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </li>
+            <li class="pr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </li>
+          </ul>
+
+          <!-- Description -->
+          <p class="my-5 tracking-widest font-medium text-green-400">
+            “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis
+            purus. Morbi blandit sit amet turpis nec”
+          </p>
+
+          <!-- Author -->
+          <div>
+            <h3 class="font-bold">Edward Newgate</h3>
+            <p class="text-sm text-gray-400">Founder Circle</p>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="w-1/2 tablet:w-full mobile:w-full relative tablet:mt-6 mobile:mt-6">
+          <img class="mx-auto rounded-2xl" src="./images/test1.png" alt="">
+          <div class="flex justify-between mx-auto absolute bottom-0 right-0 py-2 px-2 bg-white rounded-tl-xl">
+            <span class="px-2 hover:text-green-400 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+
+            <span class="px-2 hover:text-green-400 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending -->
+  <section>
+    <div class="container mx-auto mt-16 mobile:px-4 lp:px-8">
+      <!-- Title -->
+      <h2 class="font-bold text-4xl text-green-600 uppercase">Trending stories</h2>
+
+      <!-- Images list -->
+      <div class="flex justify-between items-center flex-wrap mobile:flex-col mt-8">
+        <div class="trending-item">
+          <div class="overflow-hidden rounded-t-xl">
+            <img class="trending-img" src="./images/img1.png" alt="" />
+          </div>
+          <div class="p-4 bg-white shadow-xl rounded-b-xl">
+            <h4 class="font-bold text-lg">The many benefits of taking a healing holiday</h4>
+
+            <p class="my-3 font-medium text-gray-400 text-sm">
+              ‘Helaing holidays’
+            </p>
+
+            <a href="#" class="trending-link">Read more</a>
+          </div>
+        </div>
+
+        <div class="trending-item">
+          <div class="overflow-hidden rounded-t-xl">
+            <img class="trending-img" src="./images/img2.png" alt="" />
+          </div>
+          <div class="p-4 bg-white shadow-xl rounded-b-xl">
+            <h4 class="font-bold text-lg">The best Kyoto restaurant to try Japanese food</h4>
+
+            <p class="my-3 font-medium text-gray-400 text-sm">
+              Kyoto’s best restaurants
+            </p>
+
+            <a href="#" class="trending-link">Read more</a>
+          </div>
+        </div>
+
+        <div class="trending-item">
+          <div class="overflow-hidden rounded-t-xl">
+            <img class="trending-img" src="./images/img3.png" alt="" />
+          </div>
+          <div class="p-4 bg-white shadow-xl rounded-b-xl">
+            <h4 class="font-bold text-lg">Skip Chichen Itza and head to this remote Yucatan</h4>
+
+            <p class="my-3 font-medium text-gray-400 text-sm">
+              challenging the jungle...
+            </p>
+
+            <a href="#" class="trending-link">Read more</a>
+          </div>
+        </div>
+
+        <div class="trending-item">
+          <div class="overflow-hidden rounded-t-xl">
+            <img class="trending-img" src="./images/img4.png" alt="" />
+          </div>
+          <div class="p-4 bg-white shadow-xl rounded-b-xl">
+            <h4 class="font-bold text-lg">Surf’s up at these beginner spots around the world</h4>
+
+            <p class="my-3 font-medium text-gray-400 text-sm">
+              Best beginner Sports
+            </p>
+
+            <a href="#" class="trending-link">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200">
+    <div class="container mx-auto mt-16 mobile:px-4 lp:px-8">
+      <div class="flex tablet:flex-wrap mobile:flex-col pt-36 pb-20">
+        <div class="w-2/5 tablet:w-full mobile:w-full">
+          <!-- Logo -->
+          <a href="#" class="footer-logo">Travel</a>
+
+          <p class="my-6 pr-14 text-gray-700 font-semibold">
+            Plan and book your perfect trip with expert advice, travel tips destination information from us
+          </p>
+
+          <p class="text-sm text-gray-600">©2020 Thousand Sunny. All rights reserved</p>
+        </div>
+
+        <div class="w-1/5 tablet:w-1/3 mobile:w-full tablet:mt-5 mobile:mt-5">
+          <h3 class="font-bold text-xl text-green-500">Destinations</h3>
+          <ul class="mt-3">
+            <li class="mb-2"><a href="#" class="footer-item">Africa</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Antarctica</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Asia</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Europe</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">America</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/5 tablet:w-1/3 mobile:w-full tablet:mt-5 mobile:mt-5">
+          <h3 class="font-bold text-xl text-green-500">Shop</h3>
+          <ul class="mt-3">
+            <li class="mb-2"><a href="#" class="footer-item">Destinations Guides</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Pictorial & Gifts</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Special Offers</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Delivery Times</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/5 tablet:w-1/3 mobile:w-full tablet:mt-5 mobile:mt-5">
+          <h3 class="font-bold text-xl text-green-500">Interests</h3>
+          <ul class="mt-3">
+            <li class="mb-2"><a href="#" class="footer-item">Adventure Travel</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Art And Culture</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Wildlife And Nature</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Family Holidays</a></li>
+            <li class="mb-2"><a href="#" class="footer-item">Food And Drink</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Socials -->
+      <div class="w-1/2 mx-auto border-t-2 border-gray-500">
+        <ul class="flex justify-center items-center py-12">
+          <li class="px-4"><a href="#" class="text-3xl text-green-500 hover:text-green-400"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="px-4"><a href="#" class="text-3xl text-green-500 hover:text-green-400"><i class="fab fa-twitter"></i></a></li>
+          <li class="px-4"><a href="#" class="text-3xl text-green-500 hover:text-green-400"><i class="fab fa-instagram-square"></i></a></li>
+          <li class="px-4"><a href="#" class="text-3xl text-green-500 hover:text-green-400"><i class="fab fa-youtube"></i></a></li>
+          <li class="px-4"><a href="#" class="text-3xl text-green-500 hover:text-green-400"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
