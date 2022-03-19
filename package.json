@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThienBui1801/tour-travle.git"
+    "url": "git+https://github.com/ThienBui1801/tour-travel.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThienBui1801/tour-travle/issues"
+    "url": "https://github.com/ThienBui1801/tour-travel/issues"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.0",
