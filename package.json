@@ -1,7 +1,7 @@
 {
   "name": "tour-travle",
   "version": "1.0.0",
-  "homepage": "https://thienbui1801.github.io/tour-travel/",
+  "homepage": "https://github.com/ThienBui1801/tour-travle#readme",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/ThienBui1801/tour-travle/issues"
   },
-  "homepage": "https://github.com/ThienBui1801/tour-travle#readme",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.0",
     "autoprefixer": "^10.4.4",
@@ -61,6 +60,7 @@
     "fill-range": "^7.0.1",
     "fraction.js": "^4.2.0",
     "function-bind": "^1.1.1",
+    "gh-pages": "^3.2.3",
     "glob-parent": "^6.0.2",
     "has": "^1.0.3",
     "has-flag": "^4.0.0",
